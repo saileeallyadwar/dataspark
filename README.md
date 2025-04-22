@@ -1,43 +1,54 @@
-# dataspark
-Problem Statement:
-As part of Global Electronics' data analytics team, you are tasked with conducting a comprehensive Exploratory Data Analysis (EDA) to uncover valuable insights from the company’s data. Your goal is to provide actionable recommendations that can enhance customer satisfaction, optimize operations, and drive overall business growth.
-Global Electronics, a leading retailer of consumer electronics, has provided you with several datasets containing information about their customers, products, sales, stores, and currency exchange rates. The company seeks to leverage this data to better understand their business and identify areas for improvement.
+# Data Analytics and Visualization Project
 
-Business Use Cases:
-By analyzing Global Electronics' customer, product, sales, and store data, we aim to identify key insights that will enhance marketing strategies, optimize inventory management, and improve sales forecasting. This will help tailor marketing campaigns, develop better products, plan effective promotions, and decide on store expansions and optimizations. Additionally, understanding the impact of currency exchange rates on sales will allow for better international pricing strategies. Overall, these insights will help Global Electronics increase customer satisfaction and drive business growth.
+## Project Overview
 
-Approach:
-Data Cleaning and Preparation
-Check for missing values and handle them appropriately.
-Convert data types where necessary (e.g., dates, numerical values).
-Merge datasets where necessary for analysis (e.g., linking sales data with product and customer data).
-Load Data
-Insert the preprocessed data into an SQL database by creating relevant tables for each data source and using SQL INSERT statements to load the data.
-Power BI Visualization
- Connect SQL to Power BI/Tableau, import the data, and create interactive dashboards.
+This project involves a comprehensive data analysis pipeline using SQL, Python (via Jupyter Notebooks), and Power BI. It includes:
 
-Develop 10 SQL Queries
-Formulate and execute 10 SQL queries to extract key insights from the data. These queries should address important business questions and support the analysis steps below.
+- **Data Extraction & Cleaning** using SQL queries and Python.
+- **Data Merging and Transformation** with `merged_data.csv`.
+- **Exploratory Data Analysis (EDA)** in Jupyter Notebook (`Final.ipynb`).
+- **Power BI Dashboard** for interactive visualizations (`dashboard.pbix`).
+- **Command Reference** for SQL and Python (`Commands.ipynb`).
 
-Analysis Steps:
+## Files Description
 
-Customer Analysis
-Demographic Distribution: Analyze the distribution of customers based on gender, age (calculated from birthday), location (city, state, country, continent).
-Purchase Patterns: Identify purchasing patterns such as average order value, frequency of purchases, and preferred products.
-Segmentation: Segment customers based on demographics and purchasing behavior to identify key customer groups.
-Sales Analysis
-Overall Sales Performance: Analyze total sales over time, identifying trends and seasonality
-Sales by Product: Evaluate which products are the top performers in terms of quantity sold and revenue generated.
-Sales by Store: Assess the performance of different stores based on sales data.
-Sales by Currency: Examine how different currencies impact sales figures, considering exchange rates.
+| File Name          | Description |
+|--------------------|-------------|
+| `Final.ipynb`      | Main notebook containing the complete data analysis, visualizations, and insights. |
+| `Commands.ipynb`   | Jupyter Notebook with frequently used SQL and Python commands for quick reference. |
+| `merged_data.csv`  | Final merged dataset used for analysis and visualization. |
+| `dashboard.pbix`   | Power BI report for visualizing key metrics and trends. |
+| `sql.sql`          | SQL script used for querying and preparing data before analysis. |
 
-Product Analysis
-Product Popularity: Identify the most and least popular products based on sales data.
-Profitability Analysis: Calculate profit margins for products by comparing unit cost and unit price.
-Category Analysis: Analyze sales performance across different product categories and subcategories.
-Store Analysis
-Store Performance: Evaluate store performance based on sales, size (square meters), and operational data (open date).
-Geographical Analysis: Analyze sales by store location to identify high-performing regions.
+## How to Use
 
-Results: 
-Upon completion of the project, learners are expected to deliver a comprehensive Exploratory Data Analysis (EDA) report for Global Electronics, featuring clean and integrated datasets, in-depth insights into customer demographics, purchasing behaviors, product performance, store operations, and currency impact on sales. The report will include visually compelling visualizations and actionable recommendations tailored to enhance marketing strategies, optimize inventory management, improve sales forecasting, guide product development, and inform store expansion and operational decisions. This analysis will empower Global Electronics to increase customer satisfaction, maximize revenue, and drive overall business growth.
+1. **Data Preparation**
+   - Run the SQL queries in `sql.sql` on your database to extract and preprocess the raw data.
+
+2. **Data Analysis**
+   - Open `Final.ipynb` in Jupyter Notebook.
+   - Ensure required libraries are installed (e.g., `pandas`, `matplotlib`, `seaborn`).
+   - Execute all cells to view data insights and visualizations.
+
+3. **Dashboard Visualization**
+   - Open `dashboard.pbix` in Microsoft Power BI.
+   - If prompted, update the data source to point to `merged_data.csv`.
+   - Interact with the dashboard to explore key metrics and visual stories.
+
+4. **Command Reference**
+   - Refer to `Commands.ipynb` for quick access to useful SQL and Python commands.
+
+## Requirements
+
+- Python 3.9+
+- Jupyter Notebook
+- pandas, matplotlib, seaborn (install via `pip install pandas matplotlib seaborn`)
+- Microsoft Power BI Desktop
+- A relational database (e.g., MySQL, PostgreSQL) for running SQL queries
+
+## Author
+
+This project was developed as part of a data analytics and visualization task. It showcases skills in data extraction, transformation, visualization, and reporting.
+
+---
+
